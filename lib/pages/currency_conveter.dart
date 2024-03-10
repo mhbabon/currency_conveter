@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.greenAccent,
+        backgroundColor: const Color(0xFF3A9835),
         title:const Text(
           'Currency Converter',
           style: TextStyle(
@@ -38,15 +38,16 @@ class _HomePageState extends State<HomePage> {
         child: Container(
           width: double.maxFinite,
           height: double.maxFinite,
-          decoration: const BoxDecoration(color: Colors.greenAccent),
+          decoration: const BoxDecoration(color: Color(0xFF3A9835)),
           child: Padding(
             padding: const EdgeInsets.all(10.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                  Text(
-                  result.toString(),
+                  'BDT $result',
                   style:const TextStyle(
+                    color: Colors.black,
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
                   ),
